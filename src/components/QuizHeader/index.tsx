@@ -3,6 +3,7 @@ import { View, Text } from 'react-native';
 import { ProgressBar } from '../ProgressBar';
 
 import { styles } from './styles';
+import React from 'react';
 
 interface Props {
   title: string;
@@ -11,6 +12,7 @@ interface Props {
 }
 
 export function QuizHeader({ title, totalOfQuestions, currentQuestion }: Props) {
+  console.log('totalOfQuestions', totalOfQuestions, 'currentQuestion', currentQuestion)
   return (
     <View style={styles.container}>
       <Text style={styles.title}>
